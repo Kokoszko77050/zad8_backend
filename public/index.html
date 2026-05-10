@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+    <head>
+        <main>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id = "stylesheet" rel="stylesheet" href="red.css">
+            <header>
+                <h1>Bartosz Kokoszko</h1>
+                <img src="Zdjęcia/zdjęcie.jpg" alt="Moje zdjęcie">
+                <p>
+                <button onclick="ZmienMotyw77050()">Zmiana motywu kolorystycznego</button>
+                </p>
+            </header>
+        </main> 
+    </head>
+    <body> 
+        <section>
+            <header>
+                <h2>Kontakt <button onclick="PokazUkryj77050('kontakt')">Pokaż/Ukryj</button></h2>
+            </header>
+            <div id="kontakt">
+            <p><a href="mailto:bkokosz1@stu.vistula.edu.pl">Adres E-mail</a></p>
+            <p><a href="tel:+48789010710">Numer telefonu</a></p>
+            <p>Miasto zamieszkania: Warszawa</p>
+            </div>
+        </section>
+        <section>
+            <header>
+                <h2>O mnie <button onclick="PokazUkryj77050('o-mnie')">Pokaż/Ukryj</button></h2>
+            </header>
+            <div id="o-mnie">
+            <p>Student z chęcia rozwoju i zdobywania praktycznego doświadczenia. <br>
+            Gotowy szybko przyswajać nowe umiejętności i pracować w zespole, aby osiągać wspólne cele.</p> 
+            </div>     
+        </section>
+        <section>
+            <header>
+                <h2>Umiejętnosci <button onclick="PokazUkryj77050('umiejetnosci')">Pokaż/Ukryj</button></h2>
+            </header>
+            <div id="umiejetnosci">
+            <ul id="ListaUmiejetnosci"></ul>
+            </div>
+        </section>
+        <section>
+            <header>
+                <h2>Doświadczenie <button onclick="PokazUkryj77050('doswiadczenie')">Pokaż/Ukryj</button></h2>
+            </header> 
+            <div id="doswiadczenie">
+            <article>
+                <h3>Praktykant IT - Firma XYZ (2023)</h3>
+                <p>Podczas praktyk w firmie XYZ zdobyłem doświadczenie w zakresie wsparcia technicznego, zarządzania systemami oraz rozwiązywania problemów informatycznych.<br> 
+                Pracowałem nad aktualizacją oprogramowania, monitorowaniem sieci oraz udzielaniem pomocy użytkownikom. <br>
+                To doświadczenie pozwoliło mi rozwijać umiejętności techniczne i komunikacyjne, a także zrozumieć funkcjonowanie infrastruktury IT w środowisku biznesowym.</p>                
+            </article>
+            <article>
+                <h3>Wolontariusz IT - Organizacja ABC (2024)</h3>
+                <p>Jako wolontariusz IT w organizacji ABC, zajmowałem się wsparciem technicznym dla lokalnej społeczności. <br>
+                Pomagałem w rozwiązywaniu problemów z komputerami, instalacji oprogramowania oraz edukacji cyfrowej. <br>To doświadczenie pozwoliło mi rozwijać umiejętności interpersonalne i techniczne, a także przyczynić się do poprawy dostępu do technologii dla osób potrzebujących.</p>
+            </article>
+            </div>
+        </section>
+        <section>
+            <header>
+                <h2>Edukacja <button onclick="PokazUkryj77050('edukacja')">Pokaż/Ukryj</button></h2>
+            </header>
+            <div id="edukacja">
+            <p>CXXXVII Liceum Ogólnokształcące z Oddziałami Dwujęzycznymi im. Roberta Schumana (2020-2024)</p>
+            <p>Akademia Finansów i Biznesu Vistula - Informatyka (2025-obecnie)</p>
+            </div>
+        </section>
+        <section>
+            <header>
+                <h2>Projekty <button onclick="PokazUkryj77050('projekty')">Pokaż/Ukryj</button></h2>
+            </header>
+            <div id="projekty">
+            <ul id="ListaProjekty"></ul>
+            </div>
+        </section>
+        <section>
+            <header>
+                <h2>Dodatkowe linki <button onclick="PokazUkryj77050('dodatkowe-linki')">Pokaż/Ukryj</button></h2>
+            </header>
+            <div id="dodatkowe-linki">
+            <p><a href="https://github.com/Kokoszko77050" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+            <p><a href="https://www.linkedin.com/in/bartosz-kokoszko123" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+            </div>
+        </section>
+            <form id="Formularz">
+  <div>
+    <input type="text" id="imie" placeholder="Imię">
+    <small class="error" id="imieError"></small>
+  </div>
+
+  <div>
+    <input type="text" id="nazwisko" placeholder="Nazwisko">
+    <small class="error" id="nazwiskoError"></small>
+  </div>
+
+  <div>
+    <input type="text" id="email" placeholder="Email">
+    <small class="error" id="emailError"></small>
+  </div>
+
+  <div>
+    <textarea id="wiadomosc" placeholder="Wiadomość"></textarea>
+  </div>
+
+  <button type="submit">Wyślij</button>
+</form>
+<p id="poprawneDane" style="color:green;"></p>
+<section>
+    <h2>Local Storage - Notatki</h2>
+        <input type="text" id="DodajNotatkę" placeholder="Dodaj notatkę" />
+        <button onclick="DodajNotatke()">Dodaj</button>
+        <ul id="ListaNotatek"></ul>
+</section>
+        <footer>
+            <p>&copy; 2026 Bartosz Kokoszko. Wszelkie prawa zastrzeżone.</p>
+            <p>Numer albumu: 77050</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>

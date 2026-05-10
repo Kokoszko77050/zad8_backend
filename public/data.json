@@ -1,0 +1,16 @@
+{
+    "Umiejetnosci":
+    [
+        "Znajomość języka angielskiego (C1)",
+        "Znajomość języka niemieckiego (B2)",
+        "Programowanie w Pythonie",
+        "Programowanie w C#",
+        "Projektowanie baz danych"
+    ],
+    "Projekty":
+    [
+        "Projekt strony internetowej",
+        "Projekt aplikacji mobilnej",
+        "Projekt bazy danych"
+    ]
+}
